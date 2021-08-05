@@ -10,6 +10,15 @@
   }
 }
 
+header {
+  text-align: center;
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+  color: #999999;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
 /* Window 1 */
 #window1 {
   background-image: url('big.png');
