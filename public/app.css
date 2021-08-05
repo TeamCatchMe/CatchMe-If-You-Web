@@ -1,8 +1,3 @@
-/* 네비게이션 */
-#bthome {
-  color: #bbbbbb;
-}
-
 .blink {
   animation: blink 0.5s infinite;
   font-size: 50px;
@@ -17,7 +12,7 @@
 
 /* Window 1 */
 #window1 {
-  background-image: url('back.jpg');
+  background-image: url('big.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: table;
@@ -25,26 +20,28 @@
   margin-right: auto;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 #intro {
   position: absolute;
   top: 50%;
   height: 240px;
   margin-top: -200px;
+}
+#intro_text_box {
   text-align: center;
 }
-#intro_text {
+#intro #intro_text {
   font-family: 'Apple SD Gothic Neo', sans-serif;
   font-weight: 600;
   font-size: 44px;
+  left: 50%;
   color: #ffffff;
   text-align: center;
 }
 #button_box {
   position: absolute;
-  margin-top: -200px;
-  top: 60%;
+  top: 70%;
+  height: 240px;
   text-align: center;
 }
 #button {
@@ -78,80 +75,9 @@
   content: '클릭 시 스킵합니다';
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-moz-keyframes fadeout {
-  /* Firefox */
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes fadeout {
-  /* Safari and Chrome */
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-o-keyframes fadeout {
-  /* Opera */
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 /* Window2 */
 #window2 {
-  background-image: url('back.jpg');
+  background-image: url('big.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-flex;
@@ -161,139 +87,127 @@
   -webkit-justify-content: center;
   justify-content: center;
 }
-
-#window2 #mock {
-  max-width: 500px;
-  margin-left: 120px;
+#mock {
+  max-width: 800px;
+  margin-left: 80px;
   -webkit-flex: 1;
   flex: 1;
 }
-
-#window2 #text {
+#myself {
   -webkit-flex: 1;
   flex: 1;
   vertical-align: middle;
 }
-
-#window2 #text h1 {
-  margin-top: 30%;
+#myself h1 {
+  margin-top: 50%;
   font-family: 'Apple SD Gothic Neo', sans-serif;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 50px;
   line-height: 1.5;
   color: #fff;
   text-align: center;
 }
-#window2 #text h2 {
+#myself h2 {
   font-family: 'Apple SD Gothic Neo', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
   text-align: center;
-  margin-top: 10px;
 }
 #catchme {
   text-decoration: none;
   color: #ea4579;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /* Window 3 */
 #window3 {
-  background-image: url('back.jpg');
+  background-image: url('big.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+#window3 h1 {
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+  font-weight: 800;
+  font-size: 30pt;
+  line-height: 1.5;
+  color: #ea4579;
+  text-align: center;
+}
+.container {
   display: -webkit-flex;
   display: flex;
+  margin-top: 40px;
+}
+.hobby {
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: center;
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
-#window3 h1 {
-  padding-top: 120px;
-  font-family: 'Palanquin Dark', sans-serif;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 1.5;
-  text-align: center;
+.hobby_img {
+  max-width: 250px;
+  display: inline;
 }
-#window3 #mock {
-  max-width: 400px;
-  margin-left: 250px;
-  -webkit-flex: 1;
-  flex: 1;
-}
-#window3 #text {
-  -webkit-flex: 1;
-  flex: 1;
-  vertical-align: middle;
-}
-
-#window3 #text h1 {
-  margin-top: 30%;
+.hobby_text {
   font-family: 'Apple SD Gothic Neo', sans-serif;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 1.5;
   color: #fff;
-  text-align: center;
-}
-#window3 #text h2 {
-  font-family: 'Apple SD Gothic Neo', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
-  color: #fff;
-  text-align: center;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
-
 /* Window 4 */
 #window4 {
   background-image: url('how.png');
   background-repeat: no-repeat;
   background-size: cover;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
 }
-#four_text {
+#window4 h1 {
+  padding-top: 120px;
   font-family: 'Apple SD Gothic Neo', sans-serif;
   font-weight: 600;
   font-size: 44px;
   color: #ffffff;
+  line-height: 5;
   text-align: center;
-  margin-top: 20%;
+}
+#window4 h1 span {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 400;
 }
 
 /* Window 5 */
 #window5 {
-  background-image: url('back.jpg');
+  background-image: url('big.png');
   background-repeat: no-repeat;
   background-size: cover;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
 }
 
-#sform {
-  display: inline-block;
-  height: 300px;
+#window5 #mock_img {
+  max-width: 700px;
+}
+
+/* Window 6 */
+#window6 {
+  background-image: url('big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#window6 h1 {
+  padding-top: 140px;
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.5;
+  color: white;
   text-align: center;
-  margin-top: 100px;
-  animation: fadein 3s;
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -o-animation: fadein 3s; /* Opera */
 }
-
-#window5 #input_email {
+#window6 #input_email {
   background-color: #1c1c1c;
   border: 10px solid #ea4579;
   border-radius: 5px;
@@ -306,25 +220,7 @@
   height: 20px;
 }
 
-#outro_text {
-  font-family: 'Apple SD Gothic Neo', sans-serif;
-  font-weight: 600;
-  font-size: 44px;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 20%;
-}
-
-.thankyou_message {
-  font-family: 'Apple SD Gothic Neo', sans-serif;
-  font-weight: 400;
-  font-size: 15pt;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 50px;
-}
-
-#window5 #submit_email {
+#window6 #submit_email {
   background-color: #1c1c1c;
   border: none;
   font-family: 'Apple SD Gothic Neo', sans-serif;
@@ -336,17 +232,17 @@
   margin-left: 30px;
 }
 
-#window5 #submit_email:hover {
+#window6 #submit_email:hover {
   content: '\1f680';
   background-color: #1c1c1c;
   border: none;
 }
-#window5 #submit_email p:hover::before {
+#window6 #submit_email p:hover::before {
   font-size: 25px;
   content: '\1f680';
 }
 
-#window5 #submit_email p:hover:before {
+#window6 #submit_email p:hover:before {
   content: '\1f680';
 }
 
@@ -383,4 +279,23 @@
 
 #bottom_button_box p:hover:before {
   content: '클릭 시 상단으로 돌아갑니다.';
+}
+
+#sform {
+  display: inline-block;
+  height: 300px;
+  text-align: center;
+  margin-top: 100px;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
+}
+.thankyou_message {
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+  font-weight: 400;
+  font-size: 15pt;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
 }

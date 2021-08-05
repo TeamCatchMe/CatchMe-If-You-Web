@@ -20,7 +20,7 @@ let upBtn = document.getElementById('up_button');
 skipBtn.addEventListener('click', function (ev) {
   ev.preventDefault();
   document
-    .getElementById('window5')
+    .getElementById('window6')
     .scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 

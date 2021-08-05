@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="icon" href="favicon.ico" />
     <title>캐치미 CatchMe</title>
+    <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style media="screen">
       * {
         margin: 0;
         padding: 0;
       }
+      body {
+        background-color: #1c1c1c;
+      }
       header {
         width: 100%;
         text-align: center;
         height: 50px;
         position: fixed;
+      }
+      b {
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 20px;
+        cursor: pointer;
       }
       div {
         width: 100vw;
@@ -32,17 +41,19 @@
     <section>
       <div id="window1">
         <div id="intro">
-          <span id="intro_text"></span>
-          <span class="blink">|</span>
-        </div>
-        <div id="button_box">
-          <div id="button"><p>바로 이메일 쓰러가기!</p></div>
+          <div id="intro_text_box">
+            <span id="intro_text">Hey, I'm Jihyung!</span>
+            <span id="intro_text" class="blink">|</span>
+          </div>
+          <div id="button_box">
+            <div id="button"><p>바로 이메일 쓰러가기!</p></div>
+          </div>
         </div>
       </div>
 
       <div id="window2">
         <img id="mock" src="kawaii.png" alt="" />
-        <div id="text">
+        <div id="myself">
           <h1>내 속엔 내가 너무도 많아!</h1>
           <h2>
             나에게는 수많은 내가 있습니다. <br />
@@ -56,31 +67,34 @@
       </div>
 
       <div id="window3">
-        <img id="mock" src="phone.png" alt="" />
-        <img id="mock" src="phone2.png" alt="" />
-        <div id="text">
-          <h1>내 속엔 내가 너무도 많아!</h1>
-          <h2>
-            나에게는 수많은 내가 있습니다. <br />
-            좋아하고 관심있는 것에 대한 나, <br />
-            일상적이거나 되고 싶은 모습의 나, <br />
-            이런 당신과
-            <a target="_blank" id="catchme">캐치미</a>
-            가 함께할 거에요.
-          </h2>
+        <h1>캐치미의 다양한 기능을 확인하세요!</h1>
+        <div class="container">
+          <div class="hobby">
+            <p class="hobby_text">캐츄의 활동 리포트</p>
+            <img class="hobby_img" src="phone.png" alt="" />
+          </div>
+          <div class="hobby">
+            <p class="hobby_text">다양한 캐츄 구경</p>
+            <img class="hobby_img" src="phone2.png" alt="" />
+          </div>
+          <div class="hobby">
+            <p class="hobby_text">월별 캐칭 조회</p>
+            <img class="hobby_img" src="phone3.png" alt="" />
+          </div>
         </div>
       </div>
 
       <div id="window4">
-        <h1 id="four_text">
-          여러분은 <a id="catchme">어떤 모습</a>으로 매일을 채우시겠어요?
-        </h1>
+        <h1>여러분은 <a id="catchme">어떤 모습</a>으로 매일을 채우시겠어요?</h1>
       </div>
 
       <div id="window5">
         <p align="center">
           <img id="mock_img" src="mu.png" alt="" />
         </p>
+      </div>
+
+      <div id="window6">
         <h1 id="outro_text">
           출시 소식을 재빠르게 <a id="catchme">캐치</a>하고 싶으시다면?
         </h1>
