@@ -1,3 +1,4 @@
+/* animation */
 .blink {
   animation: blink 0.5s infinite;
   font-size: 50px;
@@ -10,6 +11,7 @@
   }
 }
 
+/* Header */
 header {
   text-align: center;
   font-family: 'Apple SD Gothic Neo', sans-serif;
@@ -102,12 +104,12 @@ header {
   -webkit-flex: 1;
   flex: 1;
 }
-#myself {
+#second_text {
   -webkit-flex: 1;
   flex: 1;
   vertical-align: middle;
 }
-#myself h1 {
+#second_text h1 {
   margin-top: 50%;
   font-family: 'Apple SD Gothic Neo', sans-serif;
   font-weight: 700;
@@ -116,7 +118,7 @@ header {
   color: #fff;
   text-align: center;
 }
-#myself h2 {
+#second_text h2 {
   font-family: 'Apple SD Gothic Neo', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -149,7 +151,7 @@ header {
   display: flex;
   margin-top: 40px;
 }
-.hobby {
+.views {
   -webkit-flex: 1;
   flex: 1;
   text-align: center;
@@ -158,11 +160,11 @@ header {
   -webkit-justify-content: center;
   justify-content: center;
 }
-.hobby_img {
+.moc_img {
   max-width: 250px;
   display: inline;
 }
-.hobby_text {
+.moc_text {
   font-family: 'Apple SD Gothic Neo', sans-serif;
   color: #fff;
   font-weight: 600;
