@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>캐치미 CatchMe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        position: fixed;
+      }
+      div {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;600&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div id="window1">
+        <div id="intro">
+          <span id="intro_text"></span>
+          <span class="blink">|</span>
+        </div>
+        <div id="button_box">
+          <div id="button"><p>바로 이메일 쓰러가기!</p></div>
+        </div>
+      </div>
+
+      <div id="window2">
+        <img id="mock" src="kawaii.png" alt="" />
+        <div id="text">
+          <h1>내 속엔 내가 너무도 많아!</h1>
+          <h2>
+            나에게는 수많은 내가 있습니다. <br />
+            좋아하고 관심있는 것에 대한 나, <br />
+            일상적이거나 되고 싶은 모습의 나, <br />
+            이런 당신과
+            <a target="_blank" id="catchme">캐치미</a>
+            가 함께할 거에요.
+          </h2>
+        </div>
+      </div>
+
+      <div id="window3">
+        <img id="mock" src="phone.png" alt="" />
+        <img id="mock" src="phone2.png" alt="" />
+        <div id="text">
+          <h1>내 속엔 내가 너무도 많아!</h1>
+          <h2>
+            나에게는 수많은 내가 있습니다. <br />
+            좋아하고 관심있는 것에 대한 나, <br />
+            일상적이거나 되고 싶은 모습의 나, <br />
+            이런 당신과
+            <a target="_blank" id="catchme">캐치미</a>
+            가 함께할 거에요.
+          </h2>
+        </div>
+      </div>
+
+      <div id="window4">
+        <h1 id="four_text">
+          여러분은 <a id="catchme">어떤 모습</a>으로 매일을 채우시겠어요?
+        </h1>
+      </div>
+
+      <div id="window5">
+        <p align="center">
+          <img id="mock_img" src="mu.png" alt="" />
+        </p>
+        <h1 id="outro_text">
+          출시 소식을 재빠르게 <a id="catchme">캐치</a>하고 싶으시다면?
+        </h1>
+        <div id="sform">
+          <form
+            class="gform"
+            name="email_form"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbzSwC8asTl2jT0Z9iMrAUyTdUotSyqqdhZeVZA-eU3ezAz6p-_83beeZfGkL8F8UAJ3Wg/exec"
+          >
+            <input
+              id="input_email"
+              placeholder="이메일을 입력해주세요 :)"
+              type="email"
+              name="email"
+            />
+            <button id="submit_email"><p>캐치!</p></button>
+            <div style="display: none" class="thankyou_message">
+              <h2>
+                &#128640; 이메일 등록 성공 &#128640;
+                <br />
+                캐치미 출시에 맞춰 알림을 보내드릴게요! 감사합니다 :)
+              </h2>
+            </div>
+          </form>
+        </div>
+        <div id="bottom_button_box">
+          <div id="up_button"><p>다시 위로가기</p></div>
+        </div>
+      </div>
+    </section>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+    ></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
